@@ -13,7 +13,9 @@ We have convolutions working in sim and synthesized (in a low-power form) on the
 The driver is a C program that connects to an imaginary interface with the board, and manages loading data and running operations. It loads the image and weights from the filesystem, and passes that data to the FPGA. The driver also implements the FC, LRN, and MAXPOOL layers that are not computed on the FPGA.
 
 ## Network
-We trained a neural network to classify images with 18-bit fixed point operations. The network is based around the AlexNet architecture, and involves 6 convolution operations.
+We trained a neural network to classify images with 18-bit fixed point operations. The network is based around the AlexNet architecture, and involves 6 convolution operations. Most of the network files are located in Neural_Nets folder. Trained caffemodel weigths and images used for training can be downloaded from: https://drive.google.com/drive/folders/1TcnK37RukC0A4m5FePCrpjvQP6MeHrrE?usp=sharing. 
+
+Please set proper path in files to use these weights. 
 
 ## Directory Structure
 
